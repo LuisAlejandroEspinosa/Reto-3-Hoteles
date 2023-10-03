@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&family=Roboto:wght@400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    background-image: url("/Rectangle.png");
+    background-repeat: no-repeat;
+    padding: 48px 48px 28px 48px;
+    background-position-y: 35%;
+    background-size: cover;
+    background-blend-mode: multiply;
+    box-sizing: content-box;
+}
+
+h1.Title {
+    color: rgba(110, 227, 116, 0.993);
+    font-family:cursive;
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.Filter__Container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.Filter__Grid {
+    display: grid;
+    position: relative;
+    grid-template-columns: auto auto auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Filter__Countries, .Filter__DateFrom, .Filter__DateTo, .Filter__Prices, .Filter__Sizes {
+    position: relative;
+    padding: 8px;
+    width:180px;
+    height: auto;
+    background-color: rgba(12, 235, 23, 0.294);
+    margin-left: 10px;
+    color: #fff;
+    border: 2px solid rgba(110, 227, 116, 0.993);
+}
+
+.Filter__Clear {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 8px;
+    height: auto;
+    max-width: 6.06rem;
+    width: 97px;
+    border: 2px solid rgba(110, 227, 116, 0.993);
+    background-color: rgba(12, 235, 23, 0.294);
+    color: #fff;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.FoundMessage__Title {
+    color: rgba(110, 227, 116, 0.878);
+    font-family:'Courier New', Courier, monospace;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.FoundMessage__Content {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(110, 227, 116, 0.655);
+    font-size: 24px;
+    font-size: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.HotelsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+article.HotelCard {
+    position: relative;
+    display: flex;
+    width: 30%;
+    height: 280px;
+    box-sizing: border-box;
+    margin: 15px;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: rgb(10, 10, 10);
+    background-color:#fff;
+}
+
+img.HotelCard__Img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 1rem;
+}
+
+.HotelCard__Img::before {
+    position: absolute;
+    background: linear-gradient(to bottom, rgba(110, 227, 116, 0.993), rgb(255, 253, 253));
+    z-index: 1;
+}
+
+.HotelCard__Title {
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: rgba(110, 227, 116, 0.993);
+    
+    line-height: normal;
+    bottom: 25%;
+}
+
+.HotelCard__Info {
+    position: absolute;
+    top: 75%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 5px;
+    color: rgba(110, 227, 116, 0.993);
+}
+
+.HotelCard__Country-Numbers{
+    position: relative;
+}
+
+.HotelCard__Country {
+    position: absolute;
+}
+
+.HotelCard__Numbers {
+    position: relative;
+    display: flex;
+    top: 20px;
+}
+
+.HotelCard__Rooms {
+    position: absolute;
+    width: 100px;
+}
+
+.HotelCard__Price {
+    position: absolute;
+    left: 85px;
+}
+
+img.HotelCard__Flag {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+
+p.HotelCard__CountryName {
+    position: absolute;
+    left: 30px;
+}
+
+.HotelCard__Button {
+    position:absolute;
+    right: 25px;
+    top: 220px;
+    color:#fff;
+    display: flex;
+    padding: 5px 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: rgba(12, 235, 23, 0.294);
+    border: 2px solid rgba(110, 227, 116, 0.993);
+}
+
+#error-message {
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    margin: 25px;
+}
